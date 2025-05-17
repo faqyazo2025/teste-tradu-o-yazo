@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Perguntas Frequentes</title>
+    <link rel="stylesheet" href="styles.css">
+    
+   
+</head>
+<body>
+    <div class="faq-container">
+        <h1 data-i18n="header">Perguntas Frequentes</h1>
+
+       <div style="text-align: center;"x>
+    <select id="language-switcher" style="
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #1845ad;
+        border:none rgb(211, 10, 10); 
+        border-radius: 2px;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+    ">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Espanhol</option>
+        
+        </select>
+        
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q1">O que é o EAtech Conference?</button>
+            <div class="faq-answer"><p data-i18n="a1">O EAtech Conference é o principal evento anual da rede...</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q2">Qual é o tema da edição de 2025?</button>
+            <div class="faq-answer"><p data-i18n="a2">O tema é "Cognitive Evolution", abordando o futuro da IA...</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q3">Quando e onde será o evento?</button>
+            <div class="faq-answer"><p data-i18n="a3">- Data: 12 a 15 de março de 2025.<br>- Local: Natal - RN.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q4">Quais são os destaques da programação?</button>
+            <div class="faq-answer"><p data-i18n="a4">- Palestras com especialistas.<br>- Painéis de discussão...</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q5">O que inclui o pacote do evento?</button>
+            <div class="faq-answer"><p data-i18n="a5">- Translado entre aeroporto e hotel.<br>- Welcome kit...</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q6">As passagens aéreas estão incluídas no pacote?</button>
+            <div class="faq-answer"><p data-i18n="a6">Não, as passagens devem ser providenciadas pelos participantes.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q7">Haverá espaço para demonstrações práticas?</button>
+            <div class="faq-answer"><p data-i18n="a7">Sim, teremos Salas de Laboratório.</p></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" data-i18n="q8">Tenho dúvidas, como posso entrar em contato?</button>
+            <div class="faq-answer"><p data-i18n="a8">Entre em contato pelo e-mail: marketing@eatech.net.br</p></div>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            pt: {
+                title: "Perguntas Frequentes",
+                header: "Perguntas Frequentes",
+                q1: "O que é o EAtech Conference?",
+                a1: "O EAtech Conference é o principal evento anual da rede, reunindo profissionais renomados do setor de TI para discutir inovações tecnológicas, networking e compartilhar cases de sucesso.",
+                q2: "Qual é o tema da edição de 2025?",
+                a2: "O tema é \"Cognitive Evolution\", abordando o futuro da inteligência artificial (IA) e sua integração em soluções unificadas para otimizar o desempenho empresarial.",
+                q3: "Quando e onde será o evento?",
+                a3: "- Data: 12 a 15 de março de 2025.<br>- Local: SERHS Natal Grand Hotel & Resort, Natal - RN.",
+                q4: "Quais são os destaques da programação?",
+                a4: "- Palestras com especialistas.<br>- Painéis de discussão.<br>- Salas de laboratório.<br>- Reuniões one-to-one.<br>- Festa de encerramento.",
+                q5: "O que inclui o pacote do evento?",
+                a5: "- Translado entre o aeroporto e o hotel.<br>- Welcome kit personalizado.<br>- Acesso a todas as atividades.",
+                q6: "As passagens aéreas estão incluídas no pacote?",
+                a6: "Não, as passagens aéreas devem ser providenciadas pelos participantes.",
+                q7: "Haverá espaço para demonstrações práticas?",
+                a7: "Sim, teremos Salas de Laboratório dedicadas a experimentações tecnológicas.",
+                q8: "Tenho dúvidas, como posso entrar em contato?",
+                a8: "Entre em contato pelo e-mail: marketing@eatech.net.br"
+            },
+            en: {
+                title: "Frequently Asked Questions",
+                header: "Frequently Asked Questions",
+                q1: "What is the EAtech Conference?",
+                a1: "EAtech Conference is the network's main annual event, bringing together top IT professionals to discuss innovations, network, and share success stories.",
+                q2: "What is the theme for the 2025 edition?",
+                a2: "The theme is \"Cognitive Evolution\", exploring the future of AI and its integration in unified solutions to enhance business performance.",
+                q3: "When and where is the event?",
+                a3: "- Date: March 12–15, 2025.<br>- Location: SERHS Natal Grand Hotel & Resort, Natal - RN.",
+                q4: "What are the program highlights?",
+                a4: "- Expert talks.<br>- Discussion panels.<br>- Lab rooms for demos.<br>- One-to-one meetings.<br>- Closing party.",
+                q5: "What is included in the event package?",
+                a5: "- Transfer between airport and hotel.<br>- Personalized welcome kit.<br>- Access to all activities.",
+                q6: "Are flights included in the package?",
+                a6: "No, flights must be arranged by participants.",
+                q7: "Will there be space for practical demonstrations?",
+                a7: "Yes, we’ll have Lab Rooms dedicated to tech experimentation.",
+                q8: "I have questions, how can I contact?",
+                a8: "Contact us via email: marketing@eatech.net.br"
+            },
+
+             es: {
+                  title: "Frequently Asked Questions",
+                header: "Frequently Asked Questions",
+                q1: "What is the EAtech Conference?",
+                a1:"La Conferencia EAtech es el principal evento anual de la red, que reúne a reconocidos profesionales del sector TI para discutir innovaciones tecnológicas, establecer contactos y compartir historias de éxito.",
+                q2: "What is the theme for the 2025 edition?",
+                a2: "The theme is \"Cognitive Evolution\", exploring the future of AI and its integration in unified solutions to enhance business performance.",
+                q3: "When and where is the event?",
+                a3: "- Date: March 12–15, 2025.<br>- Location: SERHS Natal Grand Hotel & Resort, Natal - RN.",
+                q4: "What are the program highlights?",
+                a4: "- Expert talks.<br>- Discussion panels.<br>- Lab rooms for demos.<br>- One-to-one meetings.<br>- Closing party.",
+                q5: "What is included in the event package?",
+                a5: "- Transfer between airport and hotel.<br>- Personalized welcome kit.<br>- Access to all activities.",
+                q6: "Are flights included in the package?",
+                a6: "No, flights must be arranged by participants.",
+                q7: "Will there be space for practical demonstrations?",
+                a7: "Yes, we’ll have Lab Rooms dedicated to tech experimentation.",
+                q8: "I have questions, how can I contact?",
+                a8: "Contact us via email: marketing@eatech.net.br"
+
+             }
+        };
+
+        const switcher = document.getElementById("language-switcher");
+
+        function traduzir(idioma) {
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                el.innerHTML = translations[idioma][key] || key;
+            });
+        }
+
+        switcher.addEventListener("change", (e) => {
+            traduzir(e.target.value);
+        });
+
+        traduzir("pt");
+
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach((question, index) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const otherAnswers = document.querySelectorAll('.faq-answer');
+                otherAnswers.forEach((otherAnswer, i) => {
+                    if (i !== index) {
+                        otherAnswer.classList.remove('active');
+                    }
+                });
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
